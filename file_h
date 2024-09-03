@@ -1,0 +1,21 @@
+#read
+f = open('file_handle/my_file.txt', "r")
+text = f.read()
+print(text)
+f.close()
+
+#write
+f = open('file_handle/my_file.txt', "w") 
+f.write("im writing in this file")
+f.close()
+
+#append
+f = open('file_handle/my_file.txt', "a") 
+f.write("\n im writing in this file again through append")
+f.close()
+
+with open('file_handle/my_file.txt', "a") as f:
+    wi = f.write("with keyword")
+
+print(wi)
+
